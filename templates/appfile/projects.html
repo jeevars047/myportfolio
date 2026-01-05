@@ -1,0 +1,81 @@
+<style>
+    body{
+    
+    background: #081b29;
+    color: #ffffff;
+}
+nav{
+    top: 20%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+a::after{
+    content: '';
+    position: absolute;
+    background-color: orangered;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover::after{
+    width: 100%;
+}
+a:hover{
+    color: #ffffff;
+}
+
+.one a.active {
+    color: #00abf0;
+}
+.two{
+    margin-left: 30px;
+   
+}
+
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+</head>
+<body><br><br>
+    <nav class="one">
+    <a href="/index">Home</a>
+    <a href="/skill">Skills</a>
+    <a href="/projects" class="active">Projects</a>
+    <a href="/resume">Resume</a>
+    <a href="/about">About Me</a>
+</nav><br>
+<h1 style="text-align: center;">PROJECTS:</h1>
+<div class="two">
+<h2 style="color: goldenrod;">Project 1 :</h2>
+<h2>Project Name: PortFolio</h2>
+<h3 style="color: skyblue;">Using Tools:   HTML,CSS,DJANGO</h3>
+<p> This is a personal portfolio website created to showcase my skills, projects, and academic background. The site is built using HTML and CSS for the frontend and Django for dynamic content handling. It includes sections for about me, skills, projects, and contact details, offering a clear view of my capabilities as a full stack developer.</p>
+<h2 style="color: goldenrod;">Project 2 :</h2>
+</div>
+
+
+
+</body>
+</html>

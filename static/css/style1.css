@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    background: #081b29;
+    color: #ffffff;
+}
+
+
+nav{
+    height: 30vh;
+    width: 50vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+a::after{
+    content: '';
+    position: absolute;
+    background-color: orangered;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover::after{
+    width: 100%;
+}
+a:hover{
+    color: #ffffff;
+}
+.one{
+    color: black;
+}
+.two{
+    background: skyblue;
+    color: black;
+    font-size: large;
+}
+.three{
+    color: white;
+    border: 2px;
+    font-size: large;
+}

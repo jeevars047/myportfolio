@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{%static 'css/style.css' %}"> 
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">PortFolio</a>
+    
+
+<!-- Navbar content -->
+
+<nav class="navbar">
+    <div class="container-fluid">
+    <a href="/index" class="active">Home</a>
+    <a href="/skill">Skills</a>
+    <a href="/projects">Projects</a>
+    <a href="/resume">Resume</a>
+    <a href="/about">About Me</a>
+    </div>
+
+</nav>
+</header>
+
+<!--Intro-->
+
+<section class="home">
+    <div class="home-content">
+        <h1>Hi I'am Jeeva</h1>
+        <h3>Full-Stack Developer</h3>
+        <p>Python Full Stack Development involves building both the frontend and backend of web applications using technologies like HTML, CSS, Bootstrap for UI, JavaScript for interactivity, Python with Django for backend logic, and databases like MysQl for data storage. As a full stack developer, I can handle end-to-end development — from designing user interfaces to managing server-side operations and deploying complete web applications.</p>
+        <div class="btn-box">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="home-sci">
+        <a href="https://www.instagram.com/dare_to_face_47/"> <i class='bxl  bx-instagram'></i>   </a>
+        <a href="https://www.linkedin.com/in/jeevars047/"> <i class='bxl  bx-linkedin'></i> </a>
+        <a href="https://github.com/jeevars047"> <i class='bxl  bx-github'></i> </a>
+    </div>
+    <div class="home-img">
+    <div class="img-box">
+        <div class="img-item">
+            <img src="{%static '/images/mypic.png' %}" alt="">
+        </div>
+    </div>
+</div>
+</section> 
+</body>
+{% block body_block %}
+{% endblock %}
+</html>

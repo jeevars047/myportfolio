@@ -1,0 +1,96 @@
+<style>
+   body{
+    
+    background: #081b29;
+    color: #ffffff;
+}
+nav{
+    top: 20%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+a::after{
+    content: '';
+    position: absolute;
+    background-color: orangered;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover::after{
+    width: 100%;
+}
+a:hover{
+    color: #ffffff;
+}
+
+.one a.active {
+    color: #00abf0;
+}
+.contact {
+    text-align: center;
+    
+}
+
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body><br>
+    <nav class="one">
+    <a href="/index">Home</a>
+    <a href="/skill">Skills</a>
+    <a href="/projects">Projects</a>
+    <a href="/resume">Resume</a>
+    <a href="/about" class="active">About Me</a>
+</nav><br>
+
+
+<div class="contact">
+<h2 style="color: goldenrod;">College:</h2>
+<h3> Government Arts College,</h3>
+<h3>Ariyalur.</h3>
+<h3>DEPARTMENT: Bsc - Mathematics</h3>
+<h3>2022 - 2025</h3>
+<h2 style="color: goldenrod;">Address:</h2>
+<p>7/38,
+   Middle Street,
+</p>
+<p>Koppiliyankudikadu,</p>
+<p>Ariyalur,621704.
+<h3>Current Location: Chennai</h3>
+</p><br><br><br>
+<h3 style="text-align: center; color: goldenrod;">Contact Me:</h3>
+<h4>
+    LinkedIn: <a href="https://www.linkedin.com/in/jeevars047/">jeevars047</a> | GitHub: <a href="https://github.com/jeevars047">jeevars047</a> | Email: <a href="#">jeeva047@gmail.com</a> | Mobile:7868946689   
+</h4>
+
+
+</div>
+
+
+    
+</body>
+</html>

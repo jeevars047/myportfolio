@@ -1,0 +1,78 @@
+{%load static%}
+<style>
+    body{
+    
+    background: #081b29;
+    color: #ffffff;
+}
+nav{
+    top: 20%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
+}
+a::after{
+    content: '';
+    position: absolute;
+    background-color: orangered;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover::after{
+    width: 100%;
+}
+a:hover{
+    color: #ffffff;
+}
+
+.one a.active {
+    color: #00abf0;
+}
+.img-resume{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 34%;
+}
+
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+
+</head>
+<body><br>
+    <nav class="one">
+    <a href="/index">Home</a>
+    <a href="/skill">Skills</a>
+    <a href="/projects">Projects</a>
+    <a href="/resume" class="active">Resume</a>
+    <a href="/about">About Me</a>
+</nav><br>
+<h1 style="text-align: center; color: green;">My Resume:</h1>
+
+<img class="img-resume" src="{%static '/images/resume.png' %}" alt="">
+    
+</body>
+</html>
