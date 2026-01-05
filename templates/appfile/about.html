@@ -47,6 +47,39 @@ a:hover{
 }
 
 
+/* Tablet / small screens */
+@media (max-width: 1024px) {
+    nav {
+        width: 80vw;       /* slightly wider for smaller screens */
+        top: 15%;
+    }
+    a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    nav {
+        width: 90vw;              /* nearly full width */
+        flex-direction: column;    /* stack links vertically */
+        gap: 15px;                /* space between links */
+        top: 10%;
+    }
+    a {
+        font-size: 16px;
+        padding: 8px 0;           /* easier to tap on mobile */
+        text-align: center;
+    }
+    .contact {
+        padding: 20px 10px;       /* spacing for contact section */
+        font-size: 14px;
+    }
+}
+
+
+
 </style>
 
 

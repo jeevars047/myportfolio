@@ -1,5 +1,7 @@
 {%load static%}
 <style>
+
+
     body{
     
     background: #081b29;
@@ -49,6 +51,41 @@ a:hover{
     left: 34%;
 }
 
+
+
+/* Tablet / small screens */
+@media (max-width: 1024px) {
+    nav {
+        width: 80vw;
+        top: 15%;
+    }
+    a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    .img-resume {
+        left: 25%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    nav {
+        width: 90vw;
+        flex-direction: column;   /* stack links vertically */
+        gap: 15px;
+        top: 10%;
+    }
+    a {
+        font-size: 16px;
+        padding: 8px 0;          /* easier to tap */
+        text-align: center;
+    }
+    .img-resume {
+        left: 50%;                /* center horizontally */
+        transform: translateX(-50%);
+    }
+}
 
 
 </style>

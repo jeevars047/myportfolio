@@ -53,3 +53,35 @@ a:hover{
 .one a.active {
     color: #00abf0;
 }
+
+
+/* Tablet / small screens */
+@media (max-width: 1024px) {
+    nav {
+        width: 80vw; /* wider for smaller screens */
+        top: 15%;
+    }
+    a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        width: 90vw;       /* almost full width */
+        flex-direction: column; /* stack links vertically */
+        gap: 15px;         /* space between links */
+        top: 10%;
+    }
+    a {
+        font-size: 16px;
+        padding: 8px 0;    /* make links easier to tap */
+    }
+    .two h1 {
+        font-size: 24px;
+    }
+    .two h2 {
+        font-size: 18px;
+    }
+}

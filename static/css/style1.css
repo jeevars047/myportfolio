@@ -52,3 +52,38 @@ a:hover{
     border: 2px;
     font-size: large;
 }
+
+
+/* Mobile Responsive CSS */
+@media (max-width: 768px) {
+    nav {
+        width: 90vw;        /* Make nav take most of the screen */
+        flex-direction: column; /* Stack links vertically */
+        height: auto;       /* Adjust height */
+        padding: 10px 0;
+    }
+
+    a {
+        font-size: 16px;     /* Slightly smaller text */
+        margin: 5px 0;       /* Space between links */
+    }
+
+    .two, .three {
+        font-size: medium;   /* Adjust other buttons if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;    /* Smaller font for smaller screens */
+    }
+
+    nav {
+        width: 100%;        /* Full width on small devices */
+        padding: 5px 0;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
