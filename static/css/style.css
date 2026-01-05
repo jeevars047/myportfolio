@@ -9,7 +9,7 @@ body{
     color: #ededed;
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -325,58 +325,95 @@ body{
     }
 }
 
-/* Mobile */
+
+
+
+/* MOBILE VIEW FIX */
 @media (max-width: 768px) {
-    .header {
+
+    /* HEADER / NAVBAR */
+    .header{
+        position: relative;
+        padding: 15px 5%;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 5%;
+        gap: 10px;
+        background: #081b29;
     }
-    .navbar {
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar a{
+        margin-left: 0;
+        font-size: 15px;
+    
+    }
+
+    /* HOME LAYOUT */
+    .home{
+        flex-direction: column;
+        padding: 30px 5% 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    /* 👉 ORDER FIX */
+    .home-img{
+        order: 1;   /* PHOTO FIRST */
         width: 100%;
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        margin: 20px 0;
     }
-    .navbar a {
-        margin-left: 0;
-        font-size: 16px;
+
+    .home-content{
+        order: 2;   /* TEXT AFTER PHOTO */
+        max-width: 100%;
     }
-    .home-content h1 {
-        font-size: 36px;
+
+    /* IMAGE */
+    .home-img .img-box{
+        position: relative;
+        width: 65vw;
+        height: 65vw;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
     }
-    .home-content h3 {
-        font-size: 24px;
+
+    /* TEXT */
+    .home-content h1{
+        font-size: 34px;
     }
-    .home-content p {
+
+    .home-content h3{
+        font-size: 22px;
+    }
+
+    .home-content p{
         font-size: 14px;
-        margin-bottom: 30px;
     }
-    .home-content .btn-box {
+
+    /* BUTTON */
+    .home-content .btn-box{
         width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        height: auto;
+        justify-content: center;
+        margin: 20px 0;
     }
-    .btn-box a {
-        width: 100%;
-        font-size: 17px;
+
+    .btn-box a{
+        width: 220px;
     }
-    .home-img .img-box {
-        width: 60vw;
-        height: 60vw;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20%;
-    }
-    .home-sci {
-        bottom: 20px;
-        width: 120px;
-        gap: 10px;
-    }
-    .home-sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
+
+    /* SOCIAL ICONS */
+    .home-sci{
+        position: static;
+        margin: 30px auto 0;
+        justify-content: center;
+        gap: 30px;
     }
 }
